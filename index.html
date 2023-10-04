@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay Fitness</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /* css reset */
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg.jpg');
+        
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 34px;
+        top: 15px;
+    }
+    .left img{
+        width: 130px;
+        height: 130px;
+        filter: invert(150%);
+    }
+    .left div{
+        text-align: center;
+        font-size: 15px;
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        /* border: 2px solid green ; */
+        width: 42%;
+        margin: 29px auto;
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 29px;
+        display: inline-block;
+        /* border: 1px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 17px;
+       
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+   .navbar li a:hover,.navbar li a.active {
+    text-decoration: underline;
+    color: gray;
+
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 15px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+    .btn:hover
+    {
+        background-color: orangered ;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 106px 106px;
+        padding: 50px;
+        width: 30%;
+        float: right;
+        border-radius: 10px;
+    }
+    .form-group input
+    {
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 2px;
+        border: 2px solid black;
+        margin: 5px auto;
+        font-size: 25px;
+        border-radius: 8px;
+
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="https://png.pngtree.com/png-vector/20191030/ourmid/pngtree-sport-gym-logo-bodybuilder-with-big-muscles-posing-isolated-vector-silhouette-png-image_1924974.jpg">
+            <div><h2>Vinay Fitness</h2></div>
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+            <ul class="navbar">
+                <li><a href="#" class="">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for buttons -->
+           <button class="btn">Contact Us</button>
+           <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Gym now and get 20% Discount</h1>
+        <form action="Welcome.html">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
